@@ -1,0 +1,9 @@
+<script language="javascript">
+	
+	var getURL = document.URL;
+	var filePlace = String(getURL.match(/\?[0-9]*/g)).replace(/\?/g, "");
+	var fileSubDir = String(getURL.match(/\+[a-z]*/g)).replace(/\+/g, "");
+	href = "../"+fileSubDir+"/files/"+filePlace+".pdf";
+	location.replace(href);
+
+</script>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LANGUAGE>
+  <PAGE_HTITLE>File Uploader</PAGE_HTITLE>
+  <PAGE_JTITLE>File Uploader</PAGE_JTITLE>
+  <PAGE_JTEXT>Simple File Uploader for PDF files</PAGE_JTEXT>
+  <LOGIN_USER>Username:</LOGIN_USER>
+  <LOGIN_PASW>Password:</LOGIN_PASW>
+  <LOGIN_BUTN>Login</LOGIN_BUTN>
+  <LOGOUT_BUTN>Logout</LOGOUT_BUTN>
+  <WELCOM_TEXT>Welcome:</WELCOM_TEXT>
+  <UPLOAD_NAME>Filename:</UPLOAD_NAME>
+  <UPLOAD_REST> min 3 and max 9 numeric charachter</UPLOAD_REST>
+  <UPLOAD_BUTN>Upload</UPLOAD_BUTN>
+  <LIST_TITLE>My Uploads:</LIST_TITLE>
+  <LIST_RWNUM>#</LIST_RWNUM>
+  <LIST_FLINK>856 4 link</LIST_FLINK>
+  <LIST_OLINK>OPAC link (test)</LIST_OLINK>
+  <LIST_DATE>Date</LIST_DATE>
+  <LIST_TEXT>ALEPH record</LIST_TEXT>
+  <ERROR_TEXT>Error:</ERROR_TEXT>
+  <ERROR_DUPL>File is already exist!</ERROR_DUPL>
+  <ERROR_PDF>Only PDF files parmitted!</ERROR_PDF>
+  <ERROR_NOUP>Upload failed!</ERROR_NOUP>
+  <ERROR_WHUP>Upload error!</ERROR_WHUP>
+</LANGUAGE> 

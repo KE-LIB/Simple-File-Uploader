@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LANGUAGE>
+  <PAGE_HTITLE>Analitika fájlfeltöltés</PAGE_HTITLE>
+  <PAGE_JTITLE>Analitika fájlfeltöltés</PAGE_JTITLE>
+  <PAGE_JTEXT>BA és AN (illetve BK) formátumú rekordok 856-os mezőjének 4-es almezőjéhez</PAGE_JTEXT>
+  <LOGIN_USER>Egyetemi felhasználónév:</LOGIN_USER>
+  <LOGIN_PASW>Jelszó:</LOGIN_PASW>
+  <LOGIN_BUTN>Bejelentkezés</LOGIN_BUTN>
+  <LOGOUT_BUTN>Kijelentkezés</LOGOUT_BUTN>
+  <WELCOM_TEXT>Üdv:</WELCOM_TEXT>
+  <UPLOAD_NAME>Fájl neve (Rendszerszám):</UPLOAD_NAME>
+  <UPLOAD_REST>minimum 3 maximum 9 számjegy</UPLOAD_REST>
+  <UPLOAD_BUTN>Feltölt</UPLOAD_BUTN>
+  <LIST_TITLE>Saját feltöltések (utolsó 15):</LIST_TITLE>
+  <LIST_RWNUM>#</LIST_RWNUM>
+  <LIST_FLINK>856 4 link</LIST_FLINK>
+  <LIST_OLINK>OPAC link (teszt)</LIST_OLINK>
+  <LIST_DATE>Dátum</LIST_DATE>
+  <LIST_TEXT>OPAC rekord</LIST_TEXT>
+  <ERROR_TEXT>HIBA:</ERROR_TEXT>
+  <ERROR_DUPL>Már létezik ilyen nevű fájl!</ERROR_DUPL>
+  <ERROR_PDF>Csak PDF állományok feltöltése engedélyezett!</ERROR_PDF>
+  <ERROR_NOUP>A fájl nincs feltöltve!</ERROR_NOUP>
+  <ERROR_WHUP>Hiba történt a feltöltés közben!</ERROR_WHUP>
+</LANGUAGE> 
