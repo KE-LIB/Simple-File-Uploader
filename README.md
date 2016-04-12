@@ -10,8 +10,6 @@
 	
 2.	apache restart 
 	example: sudo /etc/init.d/apache2 restart
-
-================================================================================
 	
 3.	~Simple-File-Uploader/lib/config.php 
 	set uploaded file directory path: setSaveDir('./files/')
