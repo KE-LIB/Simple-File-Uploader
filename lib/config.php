@@ -13,7 +13,7 @@ $page->setSaveDir("path_to_save_dir");
 $page->setDBConnection("host","db","usr","psw");
 
 //feloldó script címe ami az átiránytást végzi url+mappanév a files mappát tartalmazó mappa
-$page->setURLSkip("../handle", "handle_dir_host_name");
+$page->setURLSkip("http://".$_SERVER['SERVER_NAME']."/handle", "handle_dir_host_name");
 
 //$page->setLanguage(); lang mappa xml név (nyelvkód) en_GB.xml, hu_HU.xml etc
 $page->setLanguage("hu_HU.xml");

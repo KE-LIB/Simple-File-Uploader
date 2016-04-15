@@ -11,6 +11,8 @@
   <UPLOAD_NAME>Fájl neve (Rendszerszám):</UPLOAD_NAME>
   <UPLOAD_REST>minimum 3 maximum 9 számjegy</UPLOAD_REST>
   <UPLOAD_BUTN>Feltölt</UPLOAD_BUTN>
+  <UPLOAD_SHTOOLT>PDF megnyitása</UPLOAD_SHTOOLT>
+  <UPLOAD_CPTOOLT>Másolás vágólapra</UPLOAD_CPTOOLT>
   <LIST_TITLE>Saját feltöltések (utolsó 15):</LIST_TITLE>
   <LIST_RWNUM>#</LIST_RWNUM>
   <LIST_FLINK>856 4 link</LIST_FLINK>

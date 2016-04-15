@@ -296,11 +296,11 @@ class Functions{
 	 *  @return nincs 
 	 */ 
 	function elementList(){
-		
+
 		global $url, $filesDir, $preURL, $postURL;
 		$i=1;
+		
 		echo "<br><br><p><b>".LIST_TITLE."</b></p>
-	
 		<table class='table table-striped '>
 		<thead>
 		<tr>
@@ -319,7 +319,18 @@ class Functions{
 			echo "
 			<tr>
 				<td>".$i."</td>
-				<td class='success'><a target='_blank' href='".$url."?".$recordNumber."+".$filesDir."'><b>".$record['new_filename']."</b></a></td>
+				<td class='success'>
+
+				<div class='input-group'>
+				<input type='text' id='copytext' class='form-control' value='".$url."?".$recordNumber."+".$filesDir."' size='10'/>
+				<span class='input-group-btn'>
+				<button title='".UPLOAD_CPTOOLT."' onClick='copyToClipboard();' class='btn btn-default'><span class='glyphicon glyphicon-copy'></span></button>
+				<a type='button' title='".UPLOAD_SHTOOLT."' class='btn btn-default' target='_blank' href='".$url."?".$recordNumber."+".$filesDir."'>
+				<span class='glyphicon glyphicon-search'></span>
+				</a>
+				</span>
+				</div>
+				</td>
 				<td><a target='_blank'href='".$preURL.$recordNumber.$postURL."'>".LIST_TEXT." (".$recordNumber.")</a></td>
 				<td>".$record['timestamp']."</td>
 			</tr>";
@@ -328,6 +339,18 @@ class Functions{
 		}
 		echo "</tbody>
 		</table>";
+		
+				?>
+<script>
+	function copyToClipboard()
+	{
+		var text = document.getElementById('copytext').select();
+		var successful = document.execCommand('copy');
+	}
+
+
+</script>
+		<?php
 	}
 
 	/**
