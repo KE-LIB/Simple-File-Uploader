@@ -1,8 +1,8 @@
-<?php
+ <?php
 /**
  * @copyright   Copyright (C) 2016 Kaposvári Egyetem Egyetemi Könyvtár
  */
- 
+  error_reporting(E_ALL);
 require_once(dirname(__FILE__) . '/adLDAP.php');
 
 class Functions{
@@ -140,17 +140,16 @@ class Functions{
 	 *  LDAP bejelentkezés kezdeményezése és session beállítása
 	 *
 	 *  @return nincs 
-	 */ 
+	 */  
 	function authenticateUser($username, $password){
 
 		$adldap = new adLDAP();
-		$adldap->connect();
 		$succesLDAP = $adldap->authenticate($username,$password,$prevent_rebind=false);
 		$userName = ($adldap->user_info($username,$fields=NULL,$isGUID=false)[0]['displayname'][0]);
-		
-		if($succesLDAP==1)
+
+		if($succesLDAP)
 		{
-			$_SESSION["logged"]=$succesLDAP;
+			$_SESSION["logged"]=1;
 			$_SESSION["name"]=$userName;
 			$_SESSION["user"]=$username;
 			
@@ -322,9 +321,9 @@ class Functions{
 				<td class='success'>
 
 				<div class='input-group'>
-				<input type='text' id='copytext' class='form-control' value='".$url."?".$recordNumber."+".$filesDir."' size='10'/>
+				<input type='text' id='copytext".$i."' class='form-control' value='".$url."?".$recordNumber."' size='10'/>
 				<span class='input-group-btn'>
-				<button title='".UPLOAD_CPTOOLT."' onClick='copyToClipboard();' class='btn btn-default'><span class='glyphicon glyphicon-copy'></span></button>
+				<button title='".UPLOAD_CPTOOLT."' onClick='copyToClipboard(".$i.");' class='btn btn-default'><span class='glyphicon glyphicon-copy'></span></button>
 				<a type='button' title='".UPLOAD_SHTOOLT."' class='btn btn-default' target='_blank' href='".$url."?".$recordNumber."+".$filesDir."'>
 				<span class='glyphicon glyphicon-search'></span>
 				</a>
@@ -342,9 +341,11 @@ class Functions{
 		
 				?>
 <script>
-	function copyToClipboard()
+	function copyToClipboard(idk)
 	{
-		var text = document.getElementById('copytext').select();
+		var id="copytext"+idk;
+		
+		var text = document.getElementById(id).select();
 		var successful = document.execCommand('copy');
 	}
 
